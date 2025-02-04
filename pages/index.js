@@ -9,7 +9,7 @@ function Home() {
       alguns me apeguei de verdade
       oustros eram comodidade, mas
       nenhum fim doeu igual
-      ao final de quase
+      ao final desse quase
 
       por esse quase 
       eu quase morri de saudade
