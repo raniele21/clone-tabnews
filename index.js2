@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width"=device-width, inithial-scale="1.0,">
+    <title>FELIZ ANIVERSÁRIO!</title>
+    <style>
+      body{
+        text-align:center;
+        background-color:blue;
+        font-family:Arial,sans-serif;
+      }
+      h1{
+        font-size:50px;
+        color:black(255, 0, 0)
+        animation piscar 1s infinite alternate;
+      }
+      @keyframes piscar{
+        from { opacity:1;}
+        to {opacity:0.5}
+      }
+      .confete{
+        position:absolute;
+        width:10px;
+        height:10px;
+        background-color: red;
+        border-radius: 50%;
+        animation:cair 3s linear infinite;
+
+      }
+      @keyframes cair{
+        from {tranform:trnslaterY(-50px); opacity:1;}
+        to {transform:translaterY(100vh);opacity:0;}
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="mensagem"></h1>
+    <button onclick="iniciarAnimacao()">CLique para ver surpesa!</button>
+    <script>
+      function iniciarAnimacao(){
+        let mensagem= documento.getElementByld("mensagem");
+        mensagem.innerHTML="🎈FELIZ ANIVERSÁRIO ANDREZA, AMO VOCÊ.SAUDADE!🎈";
+
+        for (let i=0;i<100;i++){
+          let confere=document.createElement("div");
+          confere.classList.add("confere");
+          confere.style.left=Math.random()*100+"vw";
+          confere.style.blackgroundColor="#"+
+
+          Math.floor(Math.random()*16777215).toString(16);
+          confere.style.animationDuration=(Math.random()*3+2)+"s";
+        
+          document.body.appendChild(confete);
+
+          setTimeout(()=> {
+            confere.remove();
+            },5000);
+          }
+        }
+    </script>
+  </body>
+</html>
