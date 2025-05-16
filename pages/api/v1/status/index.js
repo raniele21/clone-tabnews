@@ -1,5 +1,5 @@
 function Home() {
-  return <h1>Love never dies. It only transforms...</h1>;
+  return <h1>You are only my sunshine!</h1>;
 }
 
 export default Home;
