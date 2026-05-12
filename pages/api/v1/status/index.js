@@ -1,5 +1,5 @@
-function Home() {
-  return <h1>You are only my sunshine!</h1>;
+function status(request, response) {
+  response.status(200).json({ status: "ok" });
 }
 
-export default Home;
+module.exports = status;

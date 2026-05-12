@@ -1,5 +1,4 @@
-const statusModule = require("../../../../../../pages/api/v1/status/index.js");
-const statusHandler = statusModule.default || statusModule;
+const statusHandler = require("../../../../../pages/api/v1/index.js");
 
 function createMockResponse() {
   const res = {
@@ -17,8 +16,8 @@ function createMockResponse() {
   return res;
 }
 
-test("GET to /api/v1/status should return 200", async () => {
-  const request = { method: "GET", url: "/api/v1/status" };
+test("GET to /api/v1 should return 200", async () => {
+  const request = { method: "GET", url: "/api/v1" };
   const response = createMockResponse();
 
   await statusHandler(request, response);
